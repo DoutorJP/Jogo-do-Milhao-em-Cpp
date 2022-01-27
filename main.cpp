@@ -3,12 +3,6 @@
 #include <stdio.h>
 #include <time.h>
 
-class Pergunta
-{
-        public:
-                std::string pergunta;
-                std::string resposta;
-};
 
 std::string perguntas[] = {
         "Nova Pergunta",
@@ -26,17 +20,34 @@ std::string respostas[] = {
         "teste2-resp"
 };
 
-
-int main(int argc, char **argv)
-{
-
-        std::system("clear");
-
-        return 0;
-}
-
 int num_rand()
 {
         std::srand (time(0));
         int num = rand() % 10;
+		return num;
 }
+std::string perg(int num)
+{
+  std::string pergunta = perguntas[num];
+  return pergunta;
+}
+std::string resp(int num)
+{
+  std::string resposta = respostas[num];
+  return resposta;
+}
+int main(int argc, char **argv)
+{
+        std::system("clear");
+		std::string resposta;
+		std::cout << "Bem vindo ao Jogo do Milhão!" << '\n';
+		std::cout << perg(num_rand()) << '\n';
+		resposta = resp(num_rand());
+		std::string guess;
+		std::cin >> guess;
+		std::cout << resposta << '\n';
+		
+
+        return 0;
+}
+
