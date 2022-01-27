@@ -1,4 +1,4 @@
-# Jogo-do-Milh-o-em-C
+# Jogo-do-Milhão-em-C++
 ## Compilação
 `make`
 ## Rodando
