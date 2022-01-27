@@ -1,31 +1,42 @@
 #include <iostream>
-#include <string.h>
 #include <stdlib.h>
-#include "config.h"
 #include <stdio.h>
+#include <time.h>
+
+class Pergunta
+{
+        public:
+                std::string pergunta;
+                std::string resposta;
+};
+
+std::string perguntas[] = {
+        "Nova Pergunta",
+        "Qual a idade do Brasil?",
+        "Em que ano foi a Independencia do Brasil?",
+        "teste",
+        "teste2"
+};
+
+std::string respostas[] = {
+        "Nova Resposta",
+        "521",
+        "1822",
+        "teste-resp",
+        "teste2-resp"
+};
+
 
 int main(int argc, char **argv)
 {
-  Pergunta pergunta;
 
-  std::system("clear");
-  std::cout << "Bem vindo ao Jogo do Milhão!" << '\n';
-  std::cout << "Deseja iniciar? [S/n]" << '\n';
-  char opt;
-  std::cin >> opt;
-  switch(opt)
-	{
-	case 's':
-	case 'S':
-	  pergunta.pergunta = perguntas[num_random()];
-	  /*	  for (int i = 0; i <= 5; i++)
-		{
-		  std::cout << "A resposta de '" << pergunta.pergunta[i] << "'" << '\n';
-		  }*/
-	  break;
-	default:
-	  break;
-	}
-   
-  return 0;
+        std::system("clear");
+
+        return 0;
+}
+
+int num_rand()
+{
+        std::srand (time(0));
+        int num = rand() % 10;
 }

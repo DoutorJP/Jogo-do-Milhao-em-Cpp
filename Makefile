@@ -1,3 +1,3 @@
 all: 
-	gcc main.cpp -o milhao
+	g++ main.cpp -o milhao
 
