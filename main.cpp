@@ -5,25 +5,25 @@
 
 
 std::string perguntas[] = {
-                "Qual a idade do Brasil?",
-                "Em que ano foi a Independencia do Brasil?",
-		"Qual é o nome dado ao estadoda água em forma de gelo?",
-		"Qual bicho transmite Doença de Chagas?",
-		"Qual fruto é conhecido no Norte e Nordeste como \"jerimum\"?",
-		"Qual é o coletivo de cães?",
-		"Qual é o triângulo que tem todos os lados diferentes?"
-		
+        "Qual a idade do Brasil?",
+        "Em que ano foi a Independencia do Brasil?",
+        "Qual é o nome dado ao estadoda água em forma de gelo?",
+        "Qual bicho transmite Doença de Chagas?",
+        "Qual fruto é conhecido no Norte e Nordeste como \"jerimum\"?",
+        "Qual é o coletivo de cães?",
+        "Qual é o triângulo que tem todos os lados diferentes?"
+
 };
 
 std::string respostas[] = {
-                "521",
-                "1822",
-		"solido",
-		"barbeiro",
-		"abobora",
-		"matilha",
-		"escaleno"
-				
+        "521",
+        "1822",
+        "solido",
+        "barbeiro",
+        "abobora",
+        "matilha",
+        "escaleno"
+
 };
 
 int num_rand()
@@ -52,7 +52,7 @@ void compare_strings(std::string s1, std::string s2)
 
 int main(int argc, char **argv)
 {
-         std::system("clear");
+        std::system("clear");
         std::string resposta;
         std::cout << "Bem vindo ao Jogo do Milhão!" << '\n';
         std::cout << perg(num_rand()) << '\n';
