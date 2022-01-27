@@ -5,8 +5,8 @@
 
 
 std::string perguntas[] = {
-        "Qual a idade do Brasil?",
-        "Em que ano foi a Independencia do Brasil?",
+                "Qual a idade do Brasil?",
+                "Em que ano foi a Independencia do Brasil?",
 		"Qual é o nome dado ao estadoda água em forma de gelo?",
 		"Qual bicho transmite Doença de Chagas?",
 		"Qual fruto é conhecido no Norte e Nordeste como \"jerimum\"?",
@@ -16,8 +16,8 @@ std::string perguntas[] = {
 };
 
 std::string respostas[] = {
-        "521",
-        "1822",
+                "521",
+                "1822",
 		"solido",
 		"barbeiro",
 		"abobora",
