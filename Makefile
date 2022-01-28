@@ -1,5 +1,5 @@
 all: 
-	g++ main.cpp -o milhao
+	g++ src/main.cpp -o milhao
 clean: 
 	rm -fr milhao
 
