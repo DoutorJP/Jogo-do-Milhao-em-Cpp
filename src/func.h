@@ -45,7 +45,25 @@ std::string resp(int num)
         return resposta;
 }
 
+int cont = 0;
 void compare_strings(std::string s1, std::string s2)
 {
         s1 == s2 ? std::cout << "Certa resposta!\n" : std::cout << "Errou!\n";
+        if(s1 == s2)
+                cont++;
+        std::cout << "Pontos: " << cont  << '\n';
+
+}
+
+void nloop()
+{
+        std::string resposta;
+        std::cout << perg(num_rand()) << '\n';
+        resposta = resp(num_rand());
+        std::string guess;
+        std::cin >> guess;
+        compare_strings(guess, resposta);
+        char opt;
+        std::cout << "Digite um caractere e dê enter para continuar" << '\n';
+        std::cin >> opt;
 }
